@@ -1,2 +1,2 @@
-# Co-STAR-Prompt
-Make your prompt Co-STAR style.
+# Polish-Your-Prompt
+Make anyone master of prompt engineering.
