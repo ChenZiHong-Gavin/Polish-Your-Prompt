@@ -17,27 +17,26 @@ const initialNodes = [
 
 const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
 
-function Flow() {
+const Flow = ({ children }) => {
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
     const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
     const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
 
     return (
-        <ReactFlow
-            nodes={nodes}
-            edges={edges}
-            onNodesChange={onNodesChange}
-            onEdgesChange={onEdgesChange}
-            onConnect={onConnect}
-        >
-            <MiniMap />
-            <Controls />
-            <Background />
-            aaa
-            aaaa
-            aaaa
-        </ReactFlow>
+        <div className='w-screen h-screen rounded-box border-2 border-solid border-gray-250 ml-0.5 mr-0.5'>
+            <ReactFlow
+                nodes={nodes}
+                edges={edges}
+                onNodesChange={onNodesChange}
+                onEdgesChange={onEdgesChange}
+                onConnect={onConnect}
+            >
+                <MiniMap />
+                <Controls />
+                <Background />
+            </ReactFlow>
+        </div>
     );
 }
 

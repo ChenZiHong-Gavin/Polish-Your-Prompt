@@ -1,4 +1,6 @@
 import SideBar from "../../components/side-bar"
+import Flow from "../../components/flow";
+import ChatArea from "../../components/chat-area";
 import { useEffect, useState } from "react";
 
 
@@ -11,9 +13,11 @@ const Home = () => {
     }, [theme])
 
     return (
-        <>
+        <div className="flex flex-row">
             <SideBar />
-        </>
+            <Flow />
+            <ChatArea />
+        </div>
     )
 }
 

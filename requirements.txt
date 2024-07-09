@@ -1,3 +1,7 @@
 fastapi
 uvicorn
 pyyaml
+openai==0.28.0
+tiktoken
+retry
+python-dotenv

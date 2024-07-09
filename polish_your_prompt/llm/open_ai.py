@@ -3,6 +3,9 @@ from typing import Callable, List, Optional, Dict, Any
 import openai
 import tiktoken
 from retry import retry
+from dotenv import find_dotenv, load_dotenv
+
+load_dotenv(find_dotenv(".env"))
 
 
 class OpenAIChat:
