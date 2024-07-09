@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README_zh.md)
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -16,14 +18,14 @@
   <h1 align="center">Polish-Your-Prompt</h1>
 
   <p align="center">
-    Make anyone master of prompt engineering!
+    让所有人成为提示词大师!
     <br />
     <br />
-    <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo">View Demo</a>
+    <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo">查看示例</a>
     ·
-    <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=bug&template=bug-report---.md">报告错误</a>
     ·
-    <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=enhancement&template=feature-request---.md">新功能</a>
   </p>
 </div>
 
@@ -31,72 +33,71 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>目录</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#关于项目">关于项目</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#快速开始">快速开始</a>
       <ul>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#configuration">Installation</a></li>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#配置">配置</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#使用">使用</a></li>
+    <li><a href="#路线">路线</a></li>
+    <li><a href="#许可">许可</a></li>
+    <li><a href="#致谢">致谢</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 关于项目
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-What is the `ENGINEERING` part of `Prompt Engineering`? 
+`提示词工程`中，究竟哪里是`工程`? 
 
-Prompt Engineering is the mix of engineering and art. Some people are very good at writing, and they can talk
-to LLMs in a very natural way. However, some may not. 
-They need help to create high-quality prompts that can be used to generate satisfactory text.
+提示工程是工程与艺术的结合。有些人很擅长写提示词，他们能用很自然的方式和大语言模型交流。但是，很多人可能做不到。
+他们可能需要额外的帮助来创建高质量的提示词，以用于生成令人满意的文本。
 
-In this project, we introduced a tool that make you master of prompt engineering and create prompts
-that can be reused *the rest of your life*.
+在这个项目中，我们构建了一个工具，能够让你轻松成为提示词大师，创造出可以在*你的余生中*重复使用的提示词。
 
-The tool provides 3 types of prompt refiner:
-1.  **Simple Refiner**: refine your prompt with a simple prefix.
-2.  **Schema Refiner**: refine your prompt with a widely used structure, e.g. `COSTAR`, `RISE`.
-3.  **Annotated Refiner**: refine your prompt with text annotations.
+我们提供了3种类型的提示词优化器：
 
-See the [demos](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo) for more details.
+1.  **Simple Refiner**: 通过简单的前缀优化你的提示词。
+2.  **Schema Refiner**: 通过广泛使用的提示词模板来优化你的提示词，例如`COSTAR`, `RISE`.
+3.  **Annotated Refiner**: 通过文本批注来优化你的提示词
+
+查看 [示例](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo) 来获取更多细节。
 
 
 <!-- GETTING STARTED -->
-### Installation
+## 快速开始
+### 安装
 
   ```sh
   pip install polish_your_prompt
   ```
 
-### Configuration
+### 配置
 
-Enter your LLM API base and API key in `.env` file(create one if not exist).
+在 `.env` 文件中，输入你的大模型 API base 和 API key （如果没有这个文件，就创建一个）.
 
   ```sh
   API_BASE="your-api-base"
   API_KEY="your-api-key"
   ```
 
-In theory, any large language model that supports the OpenAI API style can use this tool.
-
+理论上，只要大模型支持 OpenAI API 风格，就可以使用这个工具。
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## 使用
 
-Take `SchemaRefiner` as an example:
+以 `SchemaRefiner` 为例:
 
 ```python
 from polish_your_prompt.core import SchemaRefiner, MODE
@@ -106,11 +107,13 @@ refiner = SchemaRefiner()
 structure, prompt = refiner.refine(prompt, schema=COSTAR(), mode=MODE.ONE_STEP)
 ```
 
-CO-STAR is a prompt template proposed by Sheila Teo in Singapore’s first ever "
-"GPT-4 Prompt Engineering competition organized by the Government Technology "
-"Agency of Singapore (GovTech). Check out the [article](https://towardsdatascience.com/how-i-won-singapores-gpt-4-prompt-engineering-competition-34c195a93d41) for more details.
+COSTAR 是由新加坡政府技术局（GovTech）组织的新加坡首届“GPT-4提示词工程”比赛中，
+Sheila Teo 提出的一个提示词模板。
 
-In this way, the LLM will change the prompt into a `COSTAR` style structure, like:
+查看 [文章](https://towardsdatascience.com/how-i-won-singapores-gpt-4-prompt-engineering-competition-34c195a93d41) 获取更多细节。
+
+LLM会将输入的提示词转换成一个 `COSTAR` 风格的结构，如：
+
 
 ```markdown
 # CONTEXT #
@@ -133,37 +136,37 @@ Clear explanation of the homework task and request for assistance.\n'
 
 ```
 
-In most cases, the LLM will generate a more satisfactory response.
+在大多数情况下，LLM 会生成一个更令人满意的回答。
 
-See the [demos](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo) for more details.
+查看 [示例](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo) 获取更多细节。
 
 
 <!-- ROADMAP -->
-## Roadmap
+## 路线
 
-- [ ] Multi-language Support
-    - [ ] Chinese
-- [ ] A demo interface for non-programmers
-- [ ] A choice to give death threats or 10＄ tips to LLM
+- [ ] 多语言支持
+    - [ ] 中文
+- [ ] 一个给非程序员的网页界面
+- [ ] 提供给LLM死亡威胁或10美元小费的选择
 
-Willing to contribute? Check out the [open issues](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=enhancement&template=feature-request---.md).
+想要贡献？查看 [open issues](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=enhancement&template=feature-request---.md)。
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+如果你有一个可以让这个项目变得更好的建议，请 fork 这个仓库并创建一个 pull request。
+你也可以简单地开启一个带有“enhancement”标签的`ISSUE`。
 
-Don't forget to give the project a star! Thanks again!
+别忘了给个star！谢谢！
 
 
 <!-- LICENSE -->
-## License
+## 许可
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
+MIT License. 查看`LICENSE.txt`。
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## 致谢
 
-Projects or articles that inspired this project:
+对本项目有启发的项目或文章：
 
 * [CO-STAR](https://towardsdatascience.com/how-i-won-singapores-gpt-4-prompt-engineering-competition-34c195a93d41)
 * [Prompt提示词——常见的Prompt框架](https://blog.csdn.net/pumpkin84514/article/details/137474655)

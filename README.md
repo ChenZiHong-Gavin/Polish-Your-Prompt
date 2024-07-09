@@ -77,6 +77,7 @@ See the [demos](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main
 
 
 <!-- GETTING STARTED -->
+## Getting-started
 ### Installation
 
   ```sh
@@ -85,7 +86,7 @@ See the [demos](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main
 
 ### Configuration
 
-Enter your LLM API base and API key in `.env` file(create one if not exist).
+Enter your LLM API base and API key in `.env` file (create one if not exist).
 
   ```sh
   API_BASE="your-api-base"
@@ -110,9 +111,11 @@ structure, prompt = refiner.refine(prompt, schema=COSTAR(), mode=MODE.ONE_STEP)
 
 CO-STAR is a prompt template proposed by Sheila Teo in Singapore’s first ever "
 "GPT-4 Prompt Engineering competition organized by the Government Technology "
-"Agency of Singapore (GovTech). Check out the [article](https://towardsdatascience.com/how-i-won-singapores-gpt-4-prompt-engineering-competition-34c195a93d41) for more details.
+"Agency of Singapore (GovTech). 
 
-In this way, the LLM will change the prompt into a `COSTAR` style structure, like:
+Check out the [article](https://towardsdatascience.com/how-i-won-singapores-gpt-4-prompt-engineering-competition-34c195a93d41) for more details.
+
+In this way, the LLM will change the prompt into a `CO-STAR` style structure, like:
 
 ```markdown
 # CONTEXT #
