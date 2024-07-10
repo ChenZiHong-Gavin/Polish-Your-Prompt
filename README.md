@@ -57,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Workflow](images/workflow.png)
 
 What is the `ENGINEERING` part of `Prompt Engineering`? 
 

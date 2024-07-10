@@ -57,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## 关于项目
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Workflow](images/workflow_zh.png)
 
 `提示词工程`中，究竟哪里是`工程`? 
 
