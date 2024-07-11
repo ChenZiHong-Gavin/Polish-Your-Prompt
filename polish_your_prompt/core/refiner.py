@@ -6,8 +6,8 @@ from polish_your_prompt.core.types import MODE
 
 
 class Refiner:
-    def __init__(self):
-        self.llm_client = OpenAIChat()
+    def __init__(self, llm_client=OpenAIChat()):
+        self.llm_client = llm_client
 
     def refine(self):
         pass

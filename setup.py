@@ -22,7 +22,10 @@ VERSION = '0.0.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    # 'requests', 'maya', 'records',
+    "openai==0.28.0",
+    "tiktoken",
+    "retry",
+    "python-dotenv",
 ]
 
 # What packages are optional?
