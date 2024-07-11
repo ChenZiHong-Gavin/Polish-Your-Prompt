@@ -74,6 +74,8 @@
 
 查看 [示例](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo) 来获取更多细节。
 
+查看 [schemas](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/polish_your_prompt/schemas) 获取更多模板。
+
 
 <!-- GETTING STARTED -->
 ## 快速开始

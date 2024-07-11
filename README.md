@@ -142,6 +142,7 @@ In most cases, the LLM will generate a more satisfactory response.
 
 See the [demos](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo) for more details.
 
+See the [schemas](https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/polish_your_prompt/schemas) for more choices.
 
 <!-- ROADMAP -->
 ## Roadmap
