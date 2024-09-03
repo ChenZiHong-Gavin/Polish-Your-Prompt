@@ -6,13 +6,13 @@ class CHAT(Schema):
         super().__init__()
         self.schema_name = "CHAT"
         self.description = (
-            "CHAT is a prompt engineering framework that focuses on the four core elements of Character, Background, "
+            "CHAT is a prompt engineering framework that focuses on the four core elements of Character, History, "
             "Ambition, and Task to provide comprehensive interaction guidance."
         )
         self.components = {
             "Character": "Define the persona or role the language model should adopt, such as a professional, "
             "a student, or a specific character from a story.",
-            "Background": "Provide the contextual information relevant to the task, including the problem to be solved,"
+            "History": "Provide the contextual information relevant to the task, including the problem to be solved,"
             "the domain, and any other pertinent details.",
             "Ambition": "Outlines the intended goal or purpose that the language model should aim to achieve with its "
             "response. This provides a clear target for the model to work towards.",
