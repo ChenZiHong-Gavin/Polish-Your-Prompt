@@ -15,6 +15,24 @@ from .RTF import RTF
 from .TAG import TAG
 from .TRACE import TRACE
 
+SCHEMAS = [
+    APE(),
+    BROKE(),
+    CARE(),
+    CHAT(),
+    COSTAR(),
+    CREATE(),
+    CRISPE(),
+    ERA(),
+    ICIO(),
+    RACE(),
+    RISE(),
+    ROSES(),
+    RTF(),
+    TAG(),
+    TRACE(),
+]
+
 __all__ = [
     "Schema",
     "APE",
@@ -32,4 +50,5 @@ __all__ = [
     "RTF",
     "TAG",
     "TRACE",
+    "SCHEMAS",
 ]

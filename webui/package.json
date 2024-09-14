@@ -7,14 +7,16 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "ajv": "^8.16.0",
+    "axios": "^1.7.7",
     "daisyui": "^4.12.10",
     "react": "^18.3.1",
     "react-daisyui": "^5.0.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
-    "reactflow": "^11.11.4",
-    "web-vitals": "^2.1.4"
+    "react18-json-view": "^0.2.8",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.5.5"
   },
   "scripts": {
     "start": "react-scripts start",
