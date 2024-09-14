@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Badge, Input } from 'react-daisyui'
+import { Badge } from 'react-daisyui'
 import { useQueryAndContentAndAnnotations } from '../../../store/annotated-refiner-store'
 import JsonView from 'react18-json-view'
 import 'react18-json-view/src/style.css'

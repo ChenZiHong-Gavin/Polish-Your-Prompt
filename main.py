@@ -1,6 +1,5 @@
 import uvicorn
 from fastapi import FastAPI, HTTPException, Request
-from jsonschema.benchmarks.subcomponents import schema
 from pydantic import BaseModel
 from polish_your_prompt.core.refiner import SimpleRefiner, SchemaRefiner, AnnotatedRefiner, MODE
 from polish_your_prompt.schemas import *
@@ -92,4 +91,4 @@ app.add_middleware(
 )
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
