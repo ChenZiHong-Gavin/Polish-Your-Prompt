@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://47.103.127.114:8000',
+    baseURL: 'https://polish-your-prompt.vercel.app/backend',
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
