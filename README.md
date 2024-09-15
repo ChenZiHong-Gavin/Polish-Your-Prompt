@@ -23,6 +23,8 @@
     <br />
     <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/tree/main/demo">View Demo</a>
     ·
+    <a href="https://polish-your-prompt.vercel.app/">Web UI</a>
+    ·
     <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/ChenZiHong-Gavin/Polish-Your-Prompt/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
