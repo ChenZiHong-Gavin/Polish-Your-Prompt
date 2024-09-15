@@ -48,7 +48,7 @@ const AnnotatedRefiner = () => {
                         <div className="w-full flex-row justify-between gap-2">
                             <h3>{alert.text}</h3>
                         </div>
-                        <Button color="ghost" onClick={() => handleRemoveToast(alerts, setAlerts, index)}>
+                        <Button color="ghost" onClick={() => handleRemoveToast(index, alerts, setAlerts)}>
                             X
                         </Button>
                     </Alert>)}
