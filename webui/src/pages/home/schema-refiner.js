@@ -1,11 +1,15 @@
 import SchemaFlow from '../../components/schema-flow-block/schema-flow-block'
-import { Button } from 'react-daisyui'
+import { Button, Toast, Alert } from 'react-daisyui'
 import { useGenerateStore, useQueryAndSchemaAndModeStore } from '../../store/schema-refiner-store'
 import axiosInstance from '../../api/axios-instance'
+import { handleAddToast, handleRemoveToast } from '../../utils/alert'
+import { useState } from 'react'
 
 const SchemaRefiner = () => {
     const { setStatus, setGenerated } = useGenerateStore()
     const { query, schema, mode } = useQueryAndSchemaAndModeStore()
+
+    const [alerts, setAlerts] = useState([])
 
     const refine = () => {
         setStatus('refining')
@@ -22,6 +26,7 @@ const SchemaRefiner = () => {
             .catch((error) => {
                 console.error(error)
                 setStatus('idle')
+                handleAddToast(alerts, setAlerts)
             }
             )
     }
@@ -39,6 +44,16 @@ const SchemaRefiner = () => {
                         onClick={() => setStatus('idle')}
                         color='neutral' className='m-5'>Clear</Button>
                 </div>
+                <Toast>
+                    {alerts.map((alert, index) => <Alert key={index} status={alert.status}>
+                        <div className="w-full flex-row justify-between gap-2">
+                            <h3>{alert.text}</h3>
+                        </div>
+                        <Button color="ghost" onClick={() => handleRemoveToast(alerts, setAlerts, index)}>
+                            X
+                        </Button>
+                    </Alert>)}
+                </Toast>
             </div>
         </>
     )
