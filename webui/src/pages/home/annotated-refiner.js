@@ -33,7 +33,7 @@ const AnnotatedRefiner = () => {
     return (
         <>
             <div className="w-1/3 m-5 h-auto">
-                <p className="text-2xl text-center"><b>Simple Refiner</b></p>
+                <p className="text-2xl text-center"><b>Annotated Refiner</b></p>
                 <AnnotatedFlow />
                 <div className="text-center">
                     <Button
